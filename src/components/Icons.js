@@ -44,7 +44,7 @@ const LinkedInIcon = ({ className, ...rest }) => (
 const GithubIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1.23em"
+    width="0.5em"
     height="1em"
     viewBox="0 0 512 512"
     className={`w-full h-auto ${className}`}

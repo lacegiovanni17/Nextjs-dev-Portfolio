@@ -3,6 +3,7 @@ import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import { TwitterIcon, LinkedInIcon, GithubIcon } from "./Icons";
+import { motion } from "framer-motion";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -30,18 +31,30 @@ const NavBar = () => {
       </nav>
 
       <nav className="flex items-center justify-center flex-wrap">
-        <Link href="https://twitter.com/ChidikeC" target={"_blank"}>
+        <motion.a
+          href="https://twitter.com/ChidikeC"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          className="w-6 mr-3"
+        >
           <TwitterIcon />
-        </Link>
-        <Link href="https://github.com/lacegiovanni17" target={"_blank"}>
+        </motion.a>
+        <motion.a
+          href="https://github.com/lacegiovanni17"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          className="w-6 mr-3"
+        >
           <GithubIcon />
-        </Link>
-        <Link
+        </motion.a>
+        <motion.a
           href="https://www.linkedin.com/in/chidike-chizoba-25628a40/"
           target={"_blank"}
+          whileHover={{ y: -2 }}
+          className="w-6 mr-3"
         >
           <LinkedInIcon />
-        </Link>
+        </motion.a>
       </nav>
 
       <div className="absolute left-[50%] top-2 translate-x-[-50% ]">
