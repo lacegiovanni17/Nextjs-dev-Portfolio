@@ -35,6 +35,7 @@ const NavBar = () => {
           href="https://twitter.com/ChidikeC"
           target={"_blank"}
           whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
           className="w-6 mr-3"
         >
           <TwitterIcon />
@@ -43,6 +44,7 @@ const NavBar = () => {
           href="https://github.com/lacegiovanni17"
           target={"_blank"}
           whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
           className="w-6 mr-3"
         >
           <GithubIcon />
@@ -51,6 +53,7 @@ const NavBar = () => {
           href="https://www.linkedin.com/in/chidike-chizoba-25628a40/"
           target={"_blank"}
           whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
           className="w-6 mr-3"
         >
           <LinkedInIcon />
