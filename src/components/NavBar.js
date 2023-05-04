@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { TwitterIcon, LinkedInIcon, GithubIcon } from "./Icons";
+import { TwitterIcon, LinkedInIcon, GithubIcon, DiscordIcon } from "./Icons";
 import { motion } from "framer-motion";
 
 const CustomLink = ({ href, title, className = "" }) => {
@@ -36,7 +36,7 @@ const NavBar = () => {
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-6 mr-3"
+          className="w-6 mx-3"
         >
           <TwitterIcon />
         </motion.a>
@@ -45,16 +45,25 @@ const NavBar = () => {
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-6 mr-3"
+          className="w-6 mx-3"
         >
           <GithubIcon />
+        </motion.a>
+        <motion.a
+          href="https://discord.com/channels/662267976984297473"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+        >
+          <DiscordIcon />
         </motion.a>
         <motion.a
           href="https://www.linkedin.com/in/chidike-chizoba-25628a40/"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-6 mr-3"
+          className="w-6 ml-3"
         >
           <LinkedInIcon />
         </motion.a>
