@@ -8,7 +8,7 @@
 ## About
 * 👋 Hi, I’m Chidike Henry 
 * 😎 I’m a MERN fullstack developer
-* 💻 This is my developer portfolio website made with NextJS, ReactJS, TailwindCSS, Framer-motion amongst.
+* 💻 This is my developer portfolio website made with NextJS, ReactJS, TailwindCSS, Framer-motion amongst other.
 * 🌍 Website:  
 * 💞️ I’m looking to collaborate on JS projects 
 * 📫 How to reach me chidike.henry@gmail.com
