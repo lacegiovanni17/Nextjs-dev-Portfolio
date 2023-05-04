@@ -2,7 +2,13 @@ import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { TwitterIcon, LinkedInIcon, GithubIcon, DiscordIcon } from "./Icons";
+import {
+  TwitterIcon,
+  LinkedInIcon,
+  GithubIcon,
+  DiscordIcon,
+  InstagramIcon,
+} from "./Icons";
 import { motion } from "framer-motion";
 
 const CustomLink = ({ href, title, className = "" }) => {
@@ -57,6 +63,15 @@ const NavBar = () => {
           className="w-6 mx-3"
         >
           <DiscordIcon />
+        </motion.a>
+        <motion.a
+          href="https://www.instagram.com/dk_senpai7/"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+        >
+          <InstagramIcon />
         </motion.a>
         <motion.a
           href="https://www.linkedin.com/in/chidike-chizoba-25628a40/"
