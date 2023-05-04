@@ -4,10 +4,6 @@
 ![GitHub forks](https://img.shields.io/github/forks/lacegiovanni17/Nextjs-dev-Portfolio?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
 ![Github Followers](https://img.shields.io/github/followers/lacegiovanni17.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
 
-### [Live Site]()
-<h3 align="left">▶ Support me via:</h3><br />
-<p><a href="https://bmc.link/chidikehenW" target="_blank"> <img  src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" height="50" width="210" alt="CodeBucks" ></img></a></p><br />
-
 
 ## About
 * 👋 Hi, I’m Chidike Henry 
@@ -16,6 +12,10 @@
 * 🌍 Website:  
 * 💞️ I’m looking to collaborate on JS projects 
 * 📫 How to reach me chidike.henry@gmail.com
+
+### [Live Site]()
+<h3 align="left">▶ Support me via:</h3><br />
+<p><a href="https://bmc.link/chidikehenW" target="_blank"> <img  src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" height="50" width="210" alt="CodeBucks" ></img></a></p><br />
 
 
 ## Introduction
