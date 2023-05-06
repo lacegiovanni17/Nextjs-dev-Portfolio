@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import profilePic from "../../public/images/profile/Chidike-retouched-removebg.png"
 import AnimatedText from '@/components/AnimatedText';
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -19,16 +20,31 @@ export default function Home() {
               <Image src={profilePic} alt="Chidike" className="w-full h-auto" />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
-              <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl !text-left" />
+              <AnimatedText
+                text="Turning Vision Into Reality With Code And Design."
+                className="!text-6xl !text-left"
+              />
               <p>
-                As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+                As a skilled full-stack software developer, I specialize in
+                software development, offering innovative and reliable
+                technology solutions for start-ups and established businesses.
+                With a strong focus on delivering business-critical software
+                systems, I bring years of experience and expertise to the
+                table. I am dedicated to turning ideas into innovative web
+                applications. Explore my latest projects and articles,
+                showcasing my expertise in React.js, web development and other technologies.
               </p>
-              <div>
-                <Link href="/dummy.pdf" target={"_blank"}>Resume</Link>
-                <Link href="chidike.henry@gmail.com" target={"_blank"}>Contact</Link>
+              <div className="flex items-center self-start mt-2">
+                <Link
+                  href="/dummy.pdf"
+                  target={"_blank"}
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark"
+                >
+                  Resume
+                </Link>
+                <Link href="chidike.henry@gmail.com" target={"_blank"}>
+                  Contact
+                </Link>
               </div>
             </div>
           </div>
