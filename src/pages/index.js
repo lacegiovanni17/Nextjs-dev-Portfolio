@@ -1,10 +1,10 @@
-import Layout from '@/components/Layout'
-import Head from 'next/head'
-import Image from 'next/image'
-import profilePic from "../../public/images/profile/Chidike-retouched-removebg.png"
-import AnimatedText from '@/components/AnimatedText';
-import Link from 'next/link';
-
+import Layout from "@/components/Layout";
+import Head from "next/head";
+import Image from "next/image";
+import profilePic from "../../public/images/profile/Chidike-retouched-removebg.png";
+import AnimatedText from "@/components/AnimatedText";
+import Link from "next/link";
+import LinkArrow from "@/components/Icons";
 
 export default function Home() {
   return (
@@ -29,18 +29,19 @@ export default function Home() {
                 software development, offering innovative and reliable
                 technology solutions for start-ups and established businesses.
                 With a strong focus on delivering business-critical software
-                systems, I bring years of experience and expertise to the
-                table. I am dedicated to turning ideas into innovative web
+                systems, I bring years of experience and expertise to the table.
+                I am dedicated to turning ideas into innovative web
                 applications. Explore my latest projects and articles,
-                showcasing my expertise in React.js, web development and other technologies.
+                showcasing my expertise in React.js, web development and other
+                technologies.
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link
                   href="/dummy.pdf"
                   target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark" download={true}
                 >
-                  Resume
+                  Resume<LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link href="chidike.henry@gmail.com" target={"_blank"}>
                   Contact
