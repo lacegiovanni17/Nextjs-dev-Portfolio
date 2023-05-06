@@ -26,6 +26,10 @@ export default function Home() {
                 projects and articles, showcasing my expertise in React.js and
                 web development.
               </p>
+              <div>
+                <Link href="/dummy.pdf" target={"_blank"}>Resume</Link>
+                <Link href="chidike.henry@gmail.com" target={"_blank"}>Contact</Link>
+              </div>
             </div>
           </div>
         </Layout>
