@@ -5,6 +5,8 @@ import profilePic from "../../public/images/profile/Chidike-retouched-removebg.p
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import LinkArrow from "@/components/Icons";
+import HireMe from "@/components/HireMe";
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
 export default function Home() {
   return (
@@ -24,14 +26,13 @@ export default function Home() {
                 text="Turning Vision Into Reality With Code And Design."
                 className="!text-6xl !text-left"
               />
-              <p>
-                As a skilled full-stack software developer, I specialize in
+              <p className="my-4 text-base font-medium">
+                My name is Chidike Henry Chizoba, As a skilled full-stack software developer, I specialize in
                 software development, offering innovative and reliable
                 technology solutions for start-ups and established businesses.
                 With a strong focus on delivering business-critical software
                 systems, I bring years of experience and expertise to the table.
-                I am dedicated to turning ideas into innovative web
-                applications. Explore my latest projects and articles,
+                Explore my latest projects and articles,
                 showcasing my expertise in React.js, web development and other
                 technologies.
               </p>
@@ -39,17 +40,27 @@ export default function Home() {
                 <Link
                   href="/dummy.pdf"
                   target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark" download={true}
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  download={true}
                 >
-                  Resume<LinkArrow className={"w-6 ml-1"} />
+                  Resume
+                  <LinkArrow className={"w-6 ml-1"} />
                 </Link>
-                <Link href="chidike.henry@gmail.com" target={"_blank"} classname="ml-4 text-lg font-medium capitalize text-dark underline">
+                <Link
+                  href="chidike.henry@gmail.com"
+                  target={"_blank"}
+                  classname="ml-4 text-lg font-medium capitalize text-dark underline"
+                >
                   Contact
                 </Link>
               </div>
             </div>
           </div>
         </Layout>
+        <HireMe />
+        <div className="absolute right-8 bottom-8 inline-block w-24">
+          <Image src={lightBulb} alt="Chidike" className="w-full h-auto" />
+        </div>
       </main>
     </>
   );
