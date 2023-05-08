@@ -6,6 +6,7 @@ import React, { useEffect, useRef } from "react";
 import profilePic from "../../public/images/profile/developer-chidike.jpg";
 import Image from "next/image";
 import { useMotionValue, useSpring, useInView } from "framer-motion";
+import Skills from "@/components/Skills";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -13,15 +14,15 @@ const AnimatedNumbers = ({ value }) => {
   const springValue = useSpring(motionValue, { duration: 3000 });
   const isInView = useInView(ref);
   useEffect(() => {
-    if(isInView) {
+    if (isInView) {
       motionValue.set(value);
     }
   }, [isInView, value, motionValue]);
 
   useEffect(() => {
     springValue.on("change", (latest) => {
-        if (ref.current && latest.toFixed(0) <= value) {
-            ref.current.textContent = latest.toFixed(0);
+      if (ref.current && latest.toFixed(0) <= value) {
+        ref.current.textContent = latest.toFixed(0);
       }
     });
   }, [springValue, value]);
@@ -102,6 +103,7 @@ const about = () => {
               </div>
             </div>
           </div>
+          <Skills />
         </Layout>
       </main>
     </>
