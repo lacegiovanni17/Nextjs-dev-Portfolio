@@ -75,23 +75,27 @@ const about = () => {
                 className="w-full h-auto rounded-2xl"
               />
             </div>
-            <div className="col span-2 flex flex-col items-end justify-between bg-red-500">
+            <div className="col-span-2 flex flex-col items-end justify-between">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
-                  <AnimatedNumbers value={25} />+
+                  <AnimatedNumbers value={30} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   satisfied clients
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">20+</span>
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={20} />+
+                </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   projects completed
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">3+</span>
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={3} />+
+                </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   years of experience
                 </h2>
