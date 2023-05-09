@@ -18,9 +18,9 @@
 
 
 ## Introduction
-This is a code repository for the corresponding video. 
+This is the code repository for the corresponding video. 
 
-Flash is a digital memories sharing App that allows users to create, share, and view memories with friends and family. It typically includes features such as creating new memory by adding a photo, title, description, liking, editing and deleting. The overall goal of Flash is to allow users to easily keep track of shared experiences and reminisce on them together.
+This is personal portfolio of mine. I utilized Next.js, React.js, Tailwind CSS, and Framer Motion to create my personal portfolio. Next.js provided server-side rendering and routing, React.js facilitated component-based development, Tailwind CSS offered a utility-first approach for styling, and Framer Motion enabled smooth animations. I believe a personal portfolio project is crucial for a full-stack web developer as it showcases their skills, experience, and creativity, serving as a powerful tool for self-promotion and attracting potential clients or employers.
 
 
 ## Technologies Used
@@ -51,17 +51,22 @@ Please give a ⭐️ if you like this project!
 
 
 # Set Up
-#RUN NPM INSTALL   
-#cd Backend folder   
-#RUN "npm run start" to start server   
-#RUN "npm start"   
+1. Install Node.js on your machine if you haven't already done so.
+2. Open your command line interface (CLI) of choice. This could be Terminal on a Mac, Command Prompt on Windows, or any other CLI.
+3. Navigate to the directory where you want to create your Next.js app.
+4. Run the following command to create a new Next.js app with TypeScript: `npx create-next-app my-app --typescript`
+Replace "my-app" with the name of your app.
+5. Once the app is created, navigate to the app directory: `cd my-app`
+6. Install the required packages for Tailwind CSS: `npm install tailwindcss postcss autoprefixer`
+7. Create a configuration file for Tailwind CSS: `npx tailwindcss init` This will create a tailwind.config.js file in the root directory of your project.
+8. Create a postcss.config.js file with the following code: css `module.exports = { plugins: [ "tailwindcss", "postcss-flexbugs-fixes", [ "postcss-preset-env", { autoprefixer: { flexbox: "no-2009", }, stage: 3, }, ], ], };`
+9. Create a file called globals.css in the styles directory with the following code:`@tailwind base;  @tailwind components;  @tailwind utilities;`
+10. Modify the _app.tsx file in the pages directory to include the globals.css file: `import '../styles/globals.css' function MyApp({ Component, pageProps }) { return <Component {...pageProps} /> } export default MyApp`
+11. You can now start the development server with the following command: `npm run dev` This should open your Next.js app in your default browser. You can now start building your app using TypeScript and Tailwind CSS.
+
 
 
 ### Resources Used in This Project
-
-- Profile image in the home page created by using https://www.midjourney.com/ tool.
-- Profile image in the about page by [Albert Dera](https://unsplash.com/@albertdera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 
-on [Unsplash](https://unsplash.com/photos/ILip77SbmOE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
 - Fonts from https://fonts.google.com/ <br />
 - Icons from https://iconify.design/ <br />
 - LightBulb Svg from https://lukaszadam.com/illustrations <br />
