@@ -1,10 +1,12 @@
 import React, { useRef } from "react";
 import {motion, useScroll} from "framer-motion"
+import LiIcon from "./LiIcon";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
   return (
     <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between">
-      <div>
+      <LiIcon />
+          <div>
         <h3 className="capitalize font-bold text-2xl">
           {position}&nbsp;
           <a
@@ -58,7 +60,7 @@ const Experience = () => {
           * Worked with the backend team to integrate APIs and improve the user experience."
           />
           <Details
-            position="Junior Software Engineer"
+            position="Junior Backend Engineer"
             company="IGate"
             time="April,2023-Present"
             companyLink="https://www.linkedin.com/company/igate-technologies/"
