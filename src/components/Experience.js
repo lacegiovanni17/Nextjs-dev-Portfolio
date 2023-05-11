@@ -63,7 +63,7 @@ const Experience = () => {
           <Details
             position="Junior Backend Engineer"
             company="IGate"
-            time="April,2023-Present"
+            time="April,2023-June,2023"
             companyLink="https://www.linkedin.com/company/igate-technologies/"
             address="Bridgewater, New Jersey, United States."
             work="Collaborated closely with designers to ensure design implementation met design standards, resulting in a 90% increase in design accuracy and client satisfaction. Identified design and development challenges and implemented solutions by writing clean, hand-coded React, Typescript and NodeJS codes to create visually appealing, interactive user interfaces, leading to a 20% increase in user engagement."
