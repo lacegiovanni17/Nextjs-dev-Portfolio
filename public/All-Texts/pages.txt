@@ -91,7 +91,7 @@ page transitions, cool background effects, unique design and it is mobile respon
 
 ARTICLES PAGE:
 
-- Words Can Change The World! 
+- Words Can Change The World!
 
 Build A Custom Pagination Component In Reactjs From Scratch
 Learn how to build a custom pagination component in ReactJS from scratch. 
