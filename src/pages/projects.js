@@ -27,11 +27,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
         </Link>
         <p className="my-2 font-medium text-dark">{summary}</p>
-        <div>
-          <Link href={github} target="_blank">
+        <div className="mt-2 flex items-center">
+          <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
           </Link>
-          <Link href={link} target="_blank">
+          <Link href={link} target="_blank" className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold">
             View Project
           </Link>
         </div>
@@ -39,6 +39,43 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     </article>
   );
 };
+
+const Project = ({title, type, img, link, github}) => {
+  return (
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
+      <Link
+        href={link}
+        target="_blank"
+        className="w-full cursor-pointer overflow-hidden rounded-lg"
+      >
+        <Image src={img} alt={title} className="w-full h-auto" />
+      </Link>
+      <div className="w-full flex flex-col items-start justify-between mt-4">
+        <span className="text-primary font-medium text-xl">{type}</span>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+        </Link>
+        <div className="w-full mt-2 flex items-center justify-between">
+          <Link
+            href={link}
+            target="_blank"
+            className="ml-4 text-lg font-semibold"
+          >
+            View
+          </Link>
+          <Link href={github} target="_blank" className="w-10">
+            <GithubIcon />
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+}
+
 
 const projects = () => {
   return (
@@ -49,11 +86,14 @@ const projects = () => {
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText text="Imagination Trumps Knowledge!" />
+          <AnimatedText
+            text="Imagination Trumps Knowledge!"
+            className="mb-16"
+          />
           <div className="grid grid-cols-12 gap-24">
             <div className="col-span-12">
               <FeaturedProject
-                title="NextJS blog web app"
+                title="NextJS Blog Web App"
                 img={project1}
                 summary="With featured and recent posts, categories. full markdown articles,
                 author information, comments, and much more, this fully responsive
@@ -66,7 +106,21 @@ const projects = () => {
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6">Project-1</div>
+            <div className="col-span-6">
+              <Project
+                title="NextJS Blog Web App"
+                img={project1}
+                summary="With featured and recent posts, categories. full markdown articles,
+                author information, comments, and much more, this fully responsive
+                CMS Blog App by Henry is the best Blog Application that
+                you can currently find on the web. And what's best of all is
+                that you and your clients can manage the blog from a dedicated
+                Content Management System with Hygraph"
+                link="https://hengine-blog-1.vercel.app/"
+                github="https://github.com/lacegiovanni17/hengine-blog"
+                type="Featured Project"
+              />
+            </div>
             <div className="col-span-6">Project-2</div>
             <div className="col-span-12">Featured Project</div>
             <div className="col-span-6">Project-3</div>
