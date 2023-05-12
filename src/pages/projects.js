@@ -9,7 +9,8 @@ import project1 from "../../public/images/projects/hengine-blog.jpg";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12">
+    <article className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"
@@ -31,7 +32,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
           </Link>
-          <Link href={link} target="_blank" className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold">
+          <Link
+            href={link}
+            target="_blank"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
+          >
             View Project
           </Link>
         </div>
@@ -40,9 +45,10 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const Project = ({title, type, img, link, github}) => {
+const Project = ({ title, type, img, link, github }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"
@@ -63,19 +69,18 @@ const Project = ({title, type, img, link, github}) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 text-lg font-semibold"
+            className="text-lg font-semibold underline"
           >
             View
           </Link>
-          <Link href={github} target="_blank" className="w-10">
+          <Link href={github} target="_blank" className="w-8">
             <GithubIcon />
           </Link>
         </div>
       </div>
     </article>
   );
-}
-
+};
 
 const projects = () => {
   return (
@@ -90,7 +95,7 @@ const projects = () => {
             text="Imagination Trumps Knowledge!"
             className="mb-16"
           />
-          <div className="grid grid-cols-12 gap-24">
+          <div className="grid grid-cols-12 gap-24 gap-y-32">
             <div className="col-span-12">
               <FeaturedProject
                 title="NextJS Blog Web App"
@@ -121,10 +126,66 @@ const projects = () => {
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6">Project-2</div>
-            <div className="col-span-12">Featured Project</div>
-            <div className="col-span-6">Project-3</div>
-            <div className="col-span-6">Project-4</div>
+            <div className="col-span-6">
+              <Project
+                title="NextJS Blog Web App"
+                img={project1}
+                summary="Project2 With featured and recent posts, categories. full markdown articles,
+                author information, comments, and much more, this fully responsive
+                CMS Blog App by Henry is the best Blog Application that
+                you can currently find on the web. And what's best of all is
+                that you and your clients can manage the blog from a dedicated
+                Content Management System with Hygraph"
+                link="https://hengine-blog-1.vercel.app/"
+                github="https://github.com/lacegiovanni17/hengine-blog"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                title="NextJS Blog Web App"
+                img={project1}
+                summary="With featured and recent posts, categories. full markdown articles,
+                author information, comments, and much more, this fully responsive
+                CMS Blog App by Henry is the best Blog Application that
+                you can currently find on the web. And what's best of all is
+                that you and your clients can manage the blog from a dedicated
+                Content Management System with Hygraph"
+                link="https://hengine-blog-1.vercel.app/"
+                github="https://github.com/lacegiovanni17/hengine-blog"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="NextJS Blog Web App"
+                img={project1}
+                summary="Project2 With featured and recent posts, categories. full markdown articles,
+                author information, comments, and much more, this fully responsive
+                CMS Blog App by Henry is the best Blog Application that
+                you can currently find on the web. And what's best of all is
+                that you and your clients can manage the blog from a dedicated
+                Content Management System with Hygraph"
+                link="https://hengine-blog-1.vercel.app/"
+                github="https://github.com/lacegiovanni17/hengine-blog"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="NextJS Blog Web App"
+                img={project1}
+                summary="Project2 With featured and recent posts, categories. full markdown articles,
+                author information, comments, and much more, this fully responsive
+                CMS Blog App by Henry is the best Blog Application that
+                you can currently find on the web. And what's best of all is
+                that you and your clients can manage the blog from a dedicated
+                Content Management System with Hygraph"
+                link="https://hengine-blog-1.vercel.app/"
+                github="https://github.com/lacegiovanni17/hengine-blog"
+                type="Featured Project"
+              />
+            </div>
           </div>
         </Layout>
       </main>
