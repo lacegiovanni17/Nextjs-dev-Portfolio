@@ -10,7 +10,9 @@ const articles = () => {
           <meta name="description" content="any description" />
             </Head>
             <main>
-                <Layout></Layout>
+                <Layout>
+                    <></>
+                </Layout>
             </main>
       </>
     );
