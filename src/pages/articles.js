@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import article1 from "../../public/images/articles/create loading screen in react js.jpg";
+import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
