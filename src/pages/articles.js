@@ -3,6 +3,10 @@ import Layout from '@/components/Layout';
 import Head from 'next/head';
 import React from 'react'
 
+const FeaturedArticle = ({ img, title, time, summary, link }) => {
+  
+}
+
 const articles = () => {
     return (
       <>
