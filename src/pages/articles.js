@@ -4,7 +4,11 @@ import Head from 'next/head';
 import React from 'react'
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
-  
+  return (
+    <li>
+      
+    </li>
+  )
 }
 
 const articles = () => {
